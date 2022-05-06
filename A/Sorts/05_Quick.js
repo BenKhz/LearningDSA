@@ -40,7 +40,7 @@ const QuickSort = (arr, start, end) => {
 if(arr.length > 1) {
   var idx = partition(arr, start, end)
 }
-// if the start of our arr is less than our index, then our partition has determined there are more balues left of pivot.
+// if the start of our arr is less than our index, then our partition has determined there are more values left of pivot.
 if(start < idx - 1) {
   QuickSort(arr, start, idx-1)
 }
