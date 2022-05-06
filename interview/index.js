@@ -5,9 +5,6 @@
 const nthLargest = (arr, n = 1) => {
   // naive apporach to finding nth largest:
   // add all values to a unique set, then sort that set and access the correct index
-  // then use reduce to add all items to a unique set
-  // create array from the resulting set and access the nth index
-
   try{
     if(n < 1) { throw new Error("n must be a positive integer value")}
     let uniq = new Set();
